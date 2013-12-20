@@ -1,0 +1,118 @@
+Listing of compilation of file /Users/prog/lisp/tmasterkey/main.lisp
+on 2011-09-07 20:16:23 by CLISP, version 2.49 (2010-07-07) (built 3524376497) (memory 3524377694)
+;; Compiling file /Users/prog/lisp/tmasterkey/main.lisp ...
+
+Disassembly of function #:|1 16 (LOAD "net.lisp")-1|
+(CONST 0) = "net.lisp"
+(CONST 1) = LOAD
+0 required arguments
+0 optional arguments
+No rest parameter
+No keyword parameters
+3 byte-code instructions:
+0     (CONST&PUSH 0)                      ; "net.lisp"
+1     (CALL1 1)                           ; LOAD
+3     (SKIP&RET 1)
+WARNING: in #:|18 37 (LET (# # #) (DEFUN GENERATE-NEURONS-MAIN # ...) ...)-2|
+         in lines 18..37 : LAYERS is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in #:|18 37 (LET (# # #) (DEFUN GENERATE-NEURONS-MAIN # ...) ...)-2|
+         in lines 18..37 : LAYERS is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in #:|18 37 (LET (# # #) (DEFUN GENERATE-NEURONS-MAIN # ...) ...)-2|
+         in lines 18..37 : LAYERS is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in #:|18 37 (LET (# # #) (DEFUN GENERATE-NEURONS-MAIN # ...) ...)-2|
+         in lines 18..37 : LAYERS is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in #:|18 37 (LET (# # #) (DEFUN GENERATE-NEURONS-MAIN # ...) ...)-2|
+         in lines 18..37 : LAYERS is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in FA in lines 18..37 : variable MAKE-AGENT is not used.
+         Misspelled or missing IGNORE declaration?
+
+Disassembly of function #:|18 37 (LET (# # #) (DEFUN GENERATE-NEURONS-MAIN # ...) ...)-2|
+(CONST 0) = GENERATE-NEURONS-MAIN
+(CONST 1) = SYSTEM::REMOVE-OLD-DEFINITIONS
+(CONST 2) = #<COMPILED-FUNCTION GENERATE-NEURONS-MAIN>
+(CONST 3) = 10
+(CONST 4) = LAYERS
+(CONST 5) = "layers>"
+(CONST 6) = "agent.lisp"
+(CONST 7) = LOAD
+(CONST 8) = FA
+(CONST 9) = #<COMPILED-FUNCTION FA>
+(CONST 10) = ((LIST 'INIT "123"))
+0 required arguments
+0 optional arguments
+No rest parameter
+No keyword parameters
+reads special variable: LAYERS
+writes special variable: LAYERS
+40 byte-code instructions:
+0     (CONST&PUSH 0)                      ; GENERATE-NEURONS-MAIN
+1     (CALL1 1)                           ; SYSTEM::REMOVE-OLD-DEFINITIONS
+3     (CONST&PUSH 0)                      ; GENERATE-NEURONS-MAIN
+4     (CONST&PUSH 2)                      ; #
+5     (CALLS2 156)                        ; SYSTEM::%PUTD
+7     (CONST&PUSH 3)                      ; 10
+8     (CONST&PUSH 3)                      ; 10
+9     (CONST&PUSH 3)                      ; 10
+10    (CALL 3 0)                          ; GENERATE-NEURONS-MAIN
+13    (SETVALUE 4)                        ; LAYERS
+15    (CONST&PUSH 5)                      ; "layers>"
+16    (PUSH-UNBOUND 1)
+18    (CALLS1 142)                        ; PRINT
+20    (GETVALUE&PUSH 4)                   ; LAYERS
+22    (PUSH-UNBOUND 1)
+24    (CALLS1 142)                        ; PRINT
+26    (CONST&PUSH 6)                      ; "agent.lisp"
+27    (CALL1 7)                           ; LOAD
+29    (CONST&PUSH 8)                      ; FA
+30    (CALL1 1)                           ; SYSTEM::REMOVE-OLD-DEFINITIONS
+32    (CONST&PUSH 8)                      ; FA
+33    (CONST&PUSH 9)                      ; #<COMPILED-FUNCTION FA>
+34    (CALLS2 156)                        ; SYSTEM::%PUTD
+36    (NIL&PUSH)
+37    (CONST&PUSH 10)                     ; ((LIST 'INIT "123"))
+38    (JMP L52)
+40    L40
+40    (LOAD&CAR&PUSH 0)
+42    (LOAD&CAR&PUSH 0)
+44    (CALL1&PUSH 8)                      ; FA
+46    (LOAD&CONS&STORE 2)
+48    (SKIP 1)
+50    (LOAD&CDR&STORE 0)
+52    L52
+52    (LOAD&PUSH 0)
+53    (CALLS1&JMPIFNOT 159 L40)           ; ENDP
+56    (SKIP 1)
+58    (LOAD&PUSH 0)
+59    (CALLS1 177)                        ; SYSTEM::LIST-NREVERSE
+61    (SKIP&RET 2)
+
+Disassembly of function GENERATE-NEURONS-MAIN
+(CONST 0) = GENERATE-NEURONS
+(CONST 1) = MAKE-NET
+3 required arguments
+0 optional arguments
+No rest parameter
+No keyword parameters
+6 byte-code instructions:
+0     (CONST&PUSH 0)                      ; GENERATE-NEURONS
+1     (LOAD&PUSH 4)
+2     (LOAD&PUSH 4)
+3     (LOAD&PUSH 4)
+4     (CALL 4 1)                          ; MAKE-NET
+7     (SKIP&RET 4)
+
+Disassembly of function FA
+1 required argument
+0 optional arguments
+No rest parameter
+No keyword parameters
+2 byte-code instructions:
+0     (NIL)
+1     (SKIP&RET 2)
+;; Wrote file /Users/prog/lisp/tmasterkey/main.fas
+;; Wrote file /Users/prog/lisp/tmasterkey/main.lis

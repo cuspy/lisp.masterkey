@@ -1,0 +1,1 @@
+run 'clisp -c lispfile.lisp'  e.g. main.lisp
